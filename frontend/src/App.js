@@ -1,21 +1,12 @@
-import React, { useState } from "react";
-import "./App.css";
-import Home from "./components/Home";
+import React from "react";
+
+import "./global.css";
+
+import Routes from "./routes";
 
 function App() {
-  const [qtd, setQtd] = useState(0);
-  return (
-    <>
-      <div className="container">
-        <Home data={`Quantidade de chamada ${qtd}`} />
-        <h1>Hello OmniStack 11</h1>
-        <div className="btn">
-          <button onClick={() => setQtd(qtd + 1)}>Adicionar</button>
-          <button onClick={() => setQtd(qtd - 1)}>Remover</button>
-        </div>
-      </div>
-    </>
-  );
+  return <Routes />;
 }
 
 export default App;
+// https://youtu.be/jFl90T6lnBQ?t=3501
